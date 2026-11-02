@@ -1,0 +1,4 @@
+- Add More Padding (At least horizontal)
+- Allow Access to Profile
+- [[Add Colours to Lead Statuses]]
+- 

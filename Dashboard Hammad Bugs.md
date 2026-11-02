@@ -1,0 +1,9 @@
+- Allocated should represent the actual allocated workload for each employee, this is shown by the estimated time for each task's associated estimated time (either service's or subtask's)
+- Modals should have the same filters applied as the main tables (task module)
+- We should have timestamps for time logged modals
+- Add Estimated Time Field to Tasks which will be autofilled from the services field, and where all other fields are empty, we can use the subtask's estimated time
+- Make modals wider to allow headers to be readable
+- Calculations wrong
+- Test on Smaller Data
+- We need to figure out how much total time an employee has, how much estimated time the assigned work will take, and how much free time the employee has to be assigned more work/is overburdened and has to be relieved by another employee
+- Cards that are grouped by status should only have modals that show data for that group's statuses & should be limited by status rules

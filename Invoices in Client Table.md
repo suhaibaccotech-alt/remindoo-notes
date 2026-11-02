@@ -1,0 +1,3 @@
+- Show outstanding Invoices in Client Table, Client Card, Client Profile, Tasks Table (New)
+- Color Coding for Widgets in Client Table
+- 

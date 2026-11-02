@@ -1,0 +1,1 @@
+Speech about commitment and communication

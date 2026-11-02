@@ -1,0 +1,34 @@
+-Client Meeting
+-Marketing Email in Client Preview
+-Turnover in Client Preview needs to be a number or have a separate input as a text(numbers only) input
+-Reassign input for giving reasons for reassignment
+-Email Status or Error Text + Reminder/Email Log
+-Clients get added when page is reloaded
+-If someone is mentioned twice in the same comment, the second mention is grey instead of blue. People should not be able to be mentioned twice.
+-Add dropdown for selecting clients for filtering by client name
+-Teams Redesign (Rectangles)
+-Add Tokens for Client Name, Assignee Names, Internal Deadline (Task), External Deadline(Task) in Email Templates
+-Call Functionality + Tying the creation of a call client task to a specific email (Task is created when the email is sent)
+
+-If company is changed repeatedly like a madman, about 3 times, the contacts stop updating
+-Add days input in recurring task, so that the deadline for the new task is not the same as the OG task
+-Put date picker on contact instead of 3 input fields
+-Remove Personal Tax Return from Services List
+-Don't make contacts with the same name as the client name
+-Related Clients Functionality
+-Client Table should load the reminder of clients to fill the count to 10 when a client is deleted
+-See if Orchestra Plugin is a better way to check for custom field emptiness
+-See if custom fields can be improved by removing fluff such as extra group and label for the other 3 types, and replacing with conditionals
+-Make scrollbar the same as the scrollbar on mozilla firefox//
+-Import Client and Task through CSV//
+-Reordering in the subtask template steps + Reordering in the checklist template//
+-Add Department
+-Contact Emails Edit in Client Preview
+-Fix spinner in client onboarding services
+-Automated Email Template Setting and Edits
+-Notification module
+-Client timeline
+-
+-Filtering for Custom Fields in Service Templates
+-Reminder Queue for sent emails, failed emails
+-

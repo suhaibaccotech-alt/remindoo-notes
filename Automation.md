@@ -1,0 +1,4 @@
+ - Others section
+ - Subtask status trigger in services to send emails
+ - Client Fields null or value matching as a trigger to send emails to assignees or clients
+ - 

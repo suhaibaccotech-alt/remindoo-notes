@@ -1,0 +1,1 @@
+Make Scroll as small as possible or not there at all for Aftab FE (do same on bubble), and add tooltips 

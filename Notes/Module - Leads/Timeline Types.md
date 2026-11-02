@@ -1,0 +1,17 @@
+task_created
+lead_added
+proposal_created
+lead_converted
+
+task_deleted
+proposal_deleted
+
+proposal_sent
+
+task_edit
+lead_edit
+
+lead_status_change
+proposal_status_change
+
+note_added

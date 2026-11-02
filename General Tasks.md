@@ -1,0 +1,2 @@
+- Add Cards for Frontend Bugs
+- Test Proposal Settings Product Changes

@@ -1,0 +1,4 @@
+- Add description to subtask preview
+- Add @ mentions to task description in task edit/task creation
+- Set a hard limit for timer to not exceed a chosen service's estimated time by more than 50% in one session (If the user approaches the hard limit, give a warning that the timer will be have to be turned back on manually after the hard limit has been reached)
+- Set a hard limit for the timer for a custom task to not exceed 8 hours in any case.

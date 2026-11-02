@@ -1,0 +1,5 @@
+- Add Notes Field (Multiline Input)
+- Limit to One Section (Domain Expansion)
+- Remove All Business Fields to be Only Lead Fields
+- Remove Pictures
+- Add Option at the start to add Quick 

@@ -1,0 +1,16 @@
+- Manually update invite status
+- Implement Soft deletion in Employee List (Vetoed)
+- If user is made inactive, then user should be prompted to reassign tasks and services first
+- espncricinfo should be the reference for timeline reference in client table to show most recent activity (Next Phase)
+- Make Subtask Inactive (Next Phase)
+- Checklist should not have description, it should follow the format of subtask steps and chosen checklists should have separate comments/notes for each status, add estimated time for checklist, change statuses to "reviewer"
+- Dates from Custom Fields are a must and the dates for the time being will be constant, but commercial launch requires custom fields
+- Segmentation is regarding custom fields being used as filters
+- Custom Client Fields should be type, name, boolean for client table columns
+- Integrate AIs with Supabase to build workflow builder, parameters for workflow event should be provided for by the AI to prompt the user with, the response should be mapped onto the existing workflow system to create automated and customized workflows
+- Save prompts in the system to allow for consistent use or repeated UX
+- Add in a separate column visibility for service custom fields but ask the user which fields can be shown on the client table as columns
+- Use AI to augment existing functions
+- Use AI element on tables to show popup for resultant data, requires csv or file export in a particular format
+- Pricing for Leads ambiguous, Engager only charges based on active clients and proposals also are restricted to active clients
+- Create dedicated section for integrations

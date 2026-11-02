@@ -1,0 +1,17 @@
+- [x] Are we making this module on Bubble and if so, will this be the last one?
+- [x] Are there changes to existing modules that are higher priority than the creation of a new module?
+- [x] Will the Client User invitation email be hardcoded? Yes
+- [ ] Which Figma version is the right one to copy for the dashboard?
+- [ ] Does the Figma cover the information that should be shown for the dashboard and its related summaries?
+- [x] Similarly, will there be a Figma design for the entire module's design? Yes
+- [x] Since the email module is being created on React, should we simply ignore or remove any aspects of the client portal that depend on it or will it be made in tandem with the client portal and connected in a similar fashion to the document builder?
+- [x] Why is there a distinction made in joining and logging in to Remindoo in the user story, how will the system be secure if anyone can use the link to access a particular client portal and then create their user/account after the fact? BS
+- [ ] Will there be a distinction between the type of client users in a client portal, that is to say, is there a need for a separate roles and permissions section?
+- [ ] Is there any context regarding the implementation of Linked Companies in the Client Portal, will Related Clients be used for it or Contacts, or will it remain entirely separate?
+- [x] What is the definition of "Recent" for the Tasks & Deadlines Section of the Dashboard? Latest 3 Tasks
+- [x] What is "Read-Only" mode; will it be made with a new roles & permissions section for the client portal? BS
+- [x] Deadlines and Status will be for the tasks linked to a client, will there be a restriction for which tasks will be shown on the client portal, will they be limited by whether the task is billable or some other attribute? Billable, Yes
+- [x] Will the responses by clients on specific tasks be in the form of comments, emails or in a similar fashion to notes in the task's timeline? (E-Sign)
+- [x] Will the document upload require comments to be saved along with the document to explain its use or background information surrounding it or will it simply be an attachment? No
+- [x] Replace E sign with Tasks? No
+- [ ] 

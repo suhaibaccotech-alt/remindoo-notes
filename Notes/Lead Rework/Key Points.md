@@ -1,0 +1,5 @@
+- Remove Scroll as much as possible
+- Make the Creation feature as streamlined as possible
+- Add Custom Fields to Lead Capture Form
+- Clean Up Lead Table
+- Add Lead Progress Status (Hardcoded Field for Automating Emails)

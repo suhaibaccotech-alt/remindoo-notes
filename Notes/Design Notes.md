@@ -1,0 +1,28 @@
+- Button Height:
+	- Main Screen Buttons, Dialog Footer Buttons, Dialog Body Buttons (Includes Plus Assignee Button) => Height should always be 32 px // Gap should be 2
+	- Dialog Header Buttons should always be 36 px (Exceptions like the assignees popup can be left as 32 pixels for their header buttons as they are smaller in size)
+- Input Fields
+	- Always white background when active
+	- Grey background for disabled inputs
+	- Grey Border Included
+	- Height should be 40 px
+	- This includes Dropdowns, Text Inputs, Datepickers, Searchbars
+	- TBD on Lead Notes Multiline Field
+- Dialog Body Headings
+	- Weight should be 700
+- Settings Module Heading and Subheading
+	- Heading should be 14 px
+	- Subtitle should be 12 px
+	- Back button should be 30 px
+- Icons (Edit/Delete)
+	- Should have a coloured background
+	- Coloured Icon
+	- 24x24
+- Table Columns with (Badge, Icon)
+	- Always 18x18
+- Table Columns with Statuses
+	- 24 px Height
+- Cancel Button
+	- Should always be grey border with transparent bg
+- Use Yellow for Caution with Normal Yellow and Black Text/Icon
+- Searchbar should be infront of buttons to make way for aggregates

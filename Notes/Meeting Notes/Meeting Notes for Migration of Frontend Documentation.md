@@ -1,0 +1,4 @@
+- Written Documentation Coupled with Duplicate App Access should be sufficient for external migration team
+- Video Demos will be made using Scribe.com and will primarily be made for the end user in mind to create actual documentation for paying users
+- Frontend for Adsum will be made on Bubble for the moment and I have 2 days to finish it.
+- 

@@ -1,0 +1,39 @@
+# Remindoo PM notes repo: what stays on this PC.
+# This file is pushed too, so never list a private note by name here.
+# Move private notes into Private/ and credentials into Google Password Manager instead.
+
+# Personal and private notes
+Private/
+
+# Obsidian program files and per-device settings
+Obsidian/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.trash/
+
+# Old nested vault settings (not the active vault)
+Notes/.obsidian/
+
+# Bulky or not needed by the sweep
+Notes/Backups/
+Notes/Pic Storage/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Folders the sweeps never open (testing logs, old boards): they stay on AT95
+Notes/Testing Logs/
+Notes/Neo Testing Logs/
+Notes/Dumpster Fires/
+Notes/-Team-/
+
+# Windows clutter
+Thumbs.db
+desktop.ini
+
+# Joplin sync folder: keep the notes and drawings, not Joplin's working files
+Joplin/locks/
+Joplin/temp/

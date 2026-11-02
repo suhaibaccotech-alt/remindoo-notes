@@ -1,0 +1,12 @@
+- Fix Table Text
+- Reconcile Table Header Icons 
+- Make Uniform Action Buttons
+- [[Fix Column Visibility]]
+- [[Add Colours to Lead Statuses]]
+- Add Pagination to the top of the table
+- Create Adequate Spacing in the table
+- Add truncation to the fields if needed
+- Add handling for empty fields
+- Add Custom Fields Functionality while keeping scroll to a minimum
+- Add Functionality to Reassign Lead through button to the table
+- 

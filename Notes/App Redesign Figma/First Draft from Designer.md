@@ -1,0 +1,8 @@
+[[Task Card]]
+[[Subtask Popup]]
+[[Client Card]]
+[[Notifications Group]]
+[[Task Creation Popup]]
+[[Employee List]]
+[[App Redesign Figma/Leads]]
+[[Team Announcement]]
