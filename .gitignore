@@ -7,6 +7,7 @@ Private/
 
 # Obsidian program files and per-device settings
 Obsidian/
+.obsidian/plugins/obsidian-git/.git_credentials_input
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/cache/
@@ -37,3 +38,4 @@ desktop.ini
 # Joplin sync folder: keep the notes and drawings, not Joplin's working files
 Joplin/locks/
 Joplin/temp/
+Joplin/.lock/
