@@ -13,4 +13,4 @@ Duplicate Custom Fields in Client Custom Fields
 	
 Custom Field Compulsory should influence CSV 
 
-First Name, Last Name 
+First Name & Last Name Syncing should work
