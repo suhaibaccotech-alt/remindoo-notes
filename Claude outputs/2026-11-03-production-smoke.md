@@ -48,3 +48,51 @@ Most of the failures below come from this one cause. Fix the deploy first, then 
 4. Invoices – Cancel on "Approve & send" leaves the invoice approved and uses its number · owner? · High · invoices, src-qa
 
 Recheck after the backend deploy (not carded yet, likely fixed by #1): dashboard Current-by-team/History/Upcoming (SCRUM-1372, Hammad), email Preview everywhere (SCRUM-1366, Zain), signed proposal preview.
+
+---
+
+## Recheck and regression, Tue 3 Nov 2026, 11:10 pm PKT
+
+Same tenant and user. **The backend has now been deployed**: every new endpoint answers 200, and no page I opened made an API call that returned 400 or above, except the signed-proposal preview.
+
+### Rechecks of the earlier failures
+
+| Item | Now | Notes |
+|---|---|---|
+| Dashboard Outstanding work by team & stage | **Pass** | Chart loads (1 task under "No team yet / Info Requested"). |
+| Dashboard History | Pass, with a question | Loads, but the default period is 19 Dec 2025 to 12 Mar 2026 and "snapshots to 2026-03-12": no daily snapshots on production since 12 Mar? It also shows "Open at period end 1, as of 2026-03-12", although the only open task was created on 3 Nov. |
+| Dashboard Upcoming | **Pass** | 7 days 0/0; 30 days and 90 days 1/1 (internal 13 Nov, external 19 Nov). Correct. |
+| Lead email Preview | **Pass** | "QA Prod BATMAN & ROBIN LTD 12659458", To: batman@yopmail.com. |
+| Task email Preview | **Pass** | "QA Prod QA Prod Task 2026-11-03 due 13 November 2026". |
+| Invoice Send reminder Preview | **Pass** | "QA Prod INV-001 for GBP 120.00 due 8 November 2026". Approve & send uses the same modal. |
+| ::Invoice Amount:: format | Still "GBP 120.00" | Expected "£120.00". |
+| Task reminder modal Preview | **Still missing** | Only Close / Update Reminder. |
+| Latest action date under task buttons | **Still missing** | |
+| Task Communication tab | **Still missing** | Task modal tabs: Task, Comments, Email Logs, Invoices. |
+| Signed proposal preview | **Fail** | Preview Proposal does nothing; GET /api/documents/shared/proposal/190 and /188 both return 404 (both are signed proposals from 10 Mar). |
+| New Proposal (list button) | Fail (UX) | Still does nothing. The lead's "Create Proposal" goes to Proposals and says "You need to create a document template before creating a proposal", but the list button shows no message. |
+| Client wizard resume at Contacts | **Fail** | Same empty "Manage your contacts" screen with no Next (QA Prod Client 2026-11-03). |
+
+### Regression sweep (pages and tabs opened, API errors checked)
+- Dashboard: Tasks (Current / History / Upcoming), Timesheet, Employee & Services, Client Summary (Total 5, Active 1, Draft 4): all load, no API errors.
+- Leads: table, Kanban (New Lead 1, Converted 1), lead profile, Communication tab, email Preview: pass. Note: the Kanban card shows Source "Direct Link" while the table shows "Manual" for the same lead. The Source filter has no "Direct Link" option, which may explain the Source = Manual → 1 result.
+- Proposals: table, Kanban (Declined 3 · £350,400, Sent 1, Signed 2), builder: pass. Signed preview: fail (above).
+- Tasks: table, filters, Timer logs, Kanban, Email Logs, email Preview, reminder: pass (gaps above).
+- Clients: list, profile preview and all tabs (Basic, Contacts, Services, Internal, Risk & AML, Communication, Client Portal Management, E-Signatures, Timeline): pass.
+- Knowledge Base: FAQs, Articles, Tags tabs: pass.
+- Invoices: list, Unpaid / Overdue / Drafts / Recurring / Credits & Notes, Payments, Templates, Reminders: load with no API errors.
+- Settings: all 14 sections (Global, Roles & Permissions, Employees, Teams, Service Templates, Email Templates, Proposal, Lead, Client Custom Fields, Profile, Campaigns, Planned Reminders, Notifications, Checklist Templates): load with no API errors.
+- Still blocked: Emails and Documents Portal (not in the sidebar for this user, /documents "Access restricted"), Financial Assistant (no AI provider), unread badge and Send Now (no mailbox or email logs), Kanban lazy-load (1 task).
+
+### Clean-up
+- Cleared the leftover "Status is New Lead" Leads filter. Proposals switched back to the table view.
+- No new test data in this pass. Nothing sent, deleted or connected.
+
+### Updated card drafts (still not created)
+Card 1 (backend) is no longer needed.
+1. Clients – Resuming client setup at Contacts shows an empty screen with no Next · Abdur Rehman · High · clients, src-qa
+2. Proposals – Signed proposal preview does nothing (shared document 404) · Abdur Rehman (update SCRUM-1353 instead?) · High · proposals, src-qa
+3. Invoices – Cancel on "Approve & send" leaves the invoice approved and uses its number · owner? · High · invoices, src-qa (invoice/money → Suhaib decides)
+4. Dashboard – History has no daily snapshots on production after 12 Mar 2026 · Syed Hammad · High · dashboard, src-qa
+5. Proposals – New Proposal button gives no message when there are no templates · owner? · Medium · proposals, src-qa
+QA-result comments rather than new cards: SCRUM-1366 (reminder modal Preview still missing; "GBP 120.00" format), SCRUM-1285 (latest action date still missing).
