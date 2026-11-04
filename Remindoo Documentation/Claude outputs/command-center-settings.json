@@ -1,0 +1,9 @@
+{
+  "cardCap": 20,
+  "capExempt": [
+    "Abdur Rehman"
+  ],
+  "source": "Command Center config/settings (https://claude.ai/artifact/LQJwA1tFaSyQiCvpb7t9Y8)",
+  "note": "Kept in sync by the Remindoo automation; read by opencode's remindoo-refresh command on AT95. Change the cap in the Command Center Settings, not here.",
+  "updatedAt": "2026-11-04"
+}
