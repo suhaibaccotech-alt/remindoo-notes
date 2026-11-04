@@ -9,4 +9,5 @@ Currency and Date Formatting
 	Check all table texts, columns
 	Check all buttons, all text across the app
 	Tokens
-	Check all date texts and 
+	Check all date texts and texts with currency across the app to see that the right formatting is used based on the tenant's selection
+
