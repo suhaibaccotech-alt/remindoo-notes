@@ -1,0 +1,19 @@
+Gemini allows under 5 minutes of video per message, so the Looms go in three batches, all in one Gemini chat. The clips are in Downloads\Looms for Gemini.
+
+=== Batch 1 (4:48): G1-loom5-full.mp4, G1-loom8-0m00-0m45.mp4, G1-loom7-0m00-0m45.mp4 ===
+(Typed into Gemini already.)
+
+=== Batch 2 (4:14): G2-loom6-3m00-4m50.mp4, G2-loom1.mp4, G2-loom3.mp4, G2-loom4.mp4, G2-loom9.mp4 ===
+
+Here are 5 more clips from the same CRM. Same rules as before: no client names, emails, phone numbers or client amounts.
+
+- G2-loom6-3m00-4m50.mp4: Loom 6 ("Tasks table", 4 Nov) from 3:00 to 4:50 of the original. It has speech. Give timestamps from the original (add 3:00 to the clip's time).
+- G2-loom1.mp4 (Tasks, 4 Nov), G2-loom3.mp4 (29 Oct), G2-loom4.mp4 (29 Oct), G2-loom9.mp4 (reminders, 4 Nov): silent. Give a timestamped account of what happens on screen.
+
+Then answer, quoting timestamps and words. Say so if a clip doesn't settle something.
+- Loom 6, 3:22–4:36: which task statuses and which client statuses count as "outstanding".
+- Looms 1, 3, 4 and 9: what the person is checking or trying to show in each, and any bug visible on screen.
+
+=== Batch 3 (3:52): G3-loom2-3x-speed.mp4 ===
+
+Last clip: Loom 2 (3 Nov), silent, sped up to 3x so it fits. Give a timestamped account of what happens on screen. Use the clip's own timestamps. Then list anything that looks like a bug, an error message, or something not saving.
