@@ -3,9 +3,9 @@ We require custom fields to make fields compulsory
 AML should not be compulsory so that clients aren't added as Draft
 Low Risk should not be default, it should show AML Missing for null values
 	Sales team wants Low Risk by default
-Labels are missing for CH Sync changes
-CH Sync isn't working for Contacts
-Service Dates for Accounts Service are not updating for Imported Clients
+Labels are missing for CH Sync changes (SCRUM-1503)
+CH Sync isn't working for Contacts (SCRUM-1504)
+Service Dates for Accounts Service are not updating for Imported Clients (SCRUM-1505)
 	Might not be working for regular clients either, need to check cause, might be a problem with client CH date fields
 Duplicate Custom Fields in Client Custom Fields
 	Company Name
@@ -13,4 +13,4 @@ Duplicate Custom Fields in Client Custom Fields
 	
 Custom Field Compulsory should influence CSV 
 
-First Name & Last Name Syncing should work
+First Name & Last Name Syncing should work (SCRUM-1504)
