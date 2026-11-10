@@ -4,8 +4,9 @@ Filed externally tag is not showing
 Show director name as subtitle in clients column
 Completion color coding as green in activity buttons
 Add close x icon on activities on modals for activities
+Auto allocate unless checkbox unselected new task assignees to subtask when reassigning in task
 ## Leads
-Collapse sides
+Collapse sides 
 Apply color coding in different event types
 ### 3CX
 Should be visible globally if call is incoming
@@ -13,7 +14,7 @@ Should be visible globally if call is incoming
 Set hourly rate for Partners, Service Manager, and Assignees for the entire firm. 
 
 # Aftab
-## Invoices
+## Integrations
 
 #### New HTML File on Client Table
 Xero and QB Integration too see how many transactions are logged for that client
