@@ -4,6 +4,12 @@ Filed externally tag is not showing
 Show director name as subtitle in clients column
 Completion color coding as green in activity buttons
 Add close x icon on activities on modals for activities
+
+## Leads
+Collapse sides
+Apply color coding in different event
+### 3CX
+Should be visible globally if call is incoming
 ### Settings
 Set hourly rate for Partners, Service Manager, and Assignees for the entire firm. 
 
@@ -41,7 +47,9 @@ Notifications for sent messages
 Between assignees
 
 ### Automation
-Send reminders 7 days before,
+#### Status and Internal Deadline based Task Email Automation 
+Send reminders 7 days before, 3 days before, 3 days after to assignees
+Escalate to HR with a list of tasks/clients that are being neglected by the assignee (requires email)
 
 # AR
 ## Leads
