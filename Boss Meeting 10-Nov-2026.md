@@ -4,31 +4,13 @@ Filed externally tag is not showing
 Show director name as subtitle in clients column
 Completion color coding as green in activity buttons
 Add close x icon on activities on modals for activities
-
 ## Leads
 Collapse sides
-Apply color coding in different event
+Apply color coding in different event types
 ### 3CX
 Should be visible globally if call is incoming
 ### Settings
 Set hourly rate for Partners, Service Manager, and Assignees for the entire firm. 
-
-# Sami
-## MCP
-
-
-## HMRC
-
-
-## Email
-
-
-## Tax Liabilities
-
-
-# MB
-## Frontend
-
 
 # Aftab
 ## Invoices
@@ -36,11 +18,7 @@ Set hourly rate for Partners, Service Manager, and Assignees for the entire firm
 #### New HTML File on Client Table
 Xero and QB Integration too see how many transactions are logged for that client
 
-## 
-
 # Hammad
-## Dashboard
-
 ## Internal Chat
 Past 30 days
 Notifications for sent messages
@@ -58,9 +36,9 @@ Show proposals with services linked in a column in the leads table
 ## Clients
 Estimated hours & Fees are not showing values for all clients
 Client Field Section should have autosave, dropdown fields should be shown as dropdowns in fields, field values for internal information is not visible on table 
-Dissolved clients should  service reminders should
-
-#### New HTML File on Client Table (On WhatsApp Group)
+Dissolved clients should stop service reminders 
+Add Outstanding fee aggregate
+### New HTML File on Client Table (On WhatsApp Group)
 Tidy up, client deadlines and other fields are not accessible, and require scrolling
 Show all information with color coding and a modal with detailed information
 Show CH Status beside the name
@@ -70,5 +48,10 @@ Leave Risk Score and Upsell opportunities
 New LoE for existing clients to bulk raise prices and have the client accept them
 Just the client table changes, and bulk Loe, not doing anything else in this HTML
 
-# Sales Team
+### Proposals
+Add copy link button to Card
+Add send custom email to Card
 
+
+# MB
+Add permission for Calendar visibility
