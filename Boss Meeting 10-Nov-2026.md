@@ -35,6 +35,13 @@ Xero and QB Integration too see how many transactions are logged for that client
 # Hammad
 ## Dashboard
 
+## Internal Chat
+Past 30 days
+Notifications for sent messages
+Between assignees
+
+### Automation
+Send reminders 7 days before,
 
 # AR
 ## Leads
@@ -52,6 +59,8 @@ Show CH Status beside the name
 Show legend detail on hover using tooltip
 Show a profile score % based on completeness (straight % on the basis of selection in fields section in settings)
 Leave Risk Score and Upsell opportunities
+New LoE for existing clients to bulk raise prices and have the client accept them
+Just the client table changes, and bulk Loe, not doing anything else in this HTML
 
 # Sales Team
 
