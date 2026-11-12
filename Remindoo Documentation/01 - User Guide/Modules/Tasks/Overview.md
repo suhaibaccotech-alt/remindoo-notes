@@ -14,6 +14,8 @@ Tasks is where all client work lives. A task is created either **automatically**
   - *Progress tracking*: Status, Progress Status, Progress Time & Variance, Completed At, Timer
   - *Scheduling*: Creation Date
   - *Actions*: Timeline, Comments
+- Two more columns, **Status Change** and **Progress Status Change**, show when each was last changed. Most columns can be sorted by clicking the header.
+- **Recurring Tasks** lists your repeating-task rules with the date each one next refreshes (**Refresh at**).
 - **Activity & Actions** column: one tile each for Email Logs, Checklist / Records, e-Signatures, Call Logs, Mentions, Comments and Invoices. The date under a tile is the last time that kind of activity happened. Clicking a tile opens it.
 - Colour key at the bottom: needs action now, waiting on client, mention for you, overdue invoices.
 
@@ -32,6 +34,6 @@ Clicking a task opens a summary card (service, client, type, priority, dates, st
 
 See [Workflows](Workflows.md) for step-by-step guides.
 
-**Status:** First draft (5 Nov 2026).
+**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA reports.
 
 *Source: observed on preprod (preprod-crm.remindoo.co) on 5 Nov 2026 during QA. The live app may lag preprod until the next release.*

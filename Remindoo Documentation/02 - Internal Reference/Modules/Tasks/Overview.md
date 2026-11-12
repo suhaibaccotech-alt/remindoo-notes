@@ -12,6 +12,11 @@
 - **Activity & Actions** tiles (aria labels): Email Logs, Checklist / Records (popover "Requested documents x of y received"), e-Signatures, Call Logs, Mentions, Comments, Invoices. The date under a tile is the latest activity of that type.
 - Partner and Managers columns have header filters (Zain, 3 Nov). No test task has values.
 
+- **Status Change** and **Progress Status Change** columns, with sort, visibility and filters (SCRUM-900). Status Change reads "Not updated yet" on every task. 13 columns are sortable; name sort ignores spaces and punctuation (SCRUM-874, SCRUM-1349).
+- Kanban loads 20 cards per column (`/api/task-table-1/kanban?perColumn=20`) and fetches the next 20 for a column on scroll.
+- On the All view the Complete and Archived chips show 0 (SCRUM-1171). Recurring rules show a "Refresh at" date; they aren't refreshing (SCRUM-1113).
+- Action buttons are coloured by activity: pink needs action, orange waiting on client, purple mention, red overdue invoices, with a legend on the pagination bar (SCRUM-1287 unclear).
+
 ## Task modal and workspace
 - Modal tabs: Task, Comments, Email Logs, Invoices (Due, Paid, invoice list, Link invoice, View in Invoices).
 - Modal actions: View Subtasks, Edit Task, Raise Invoice, Reassign Task, Archive Task, Snooze Task, Add Subtask, AI Task Analysis, View Timeline, Delete This Task. **No latest-action dates under them, and no Next Step or Next Page** (SCRUM-1285 failed QA 5 Nov).
@@ -22,4 +27,4 @@
 - Create Quick Task / Detailed Task. Required: name (select or create), estimated time, internal and external deadlines, assignees (teams or employees). Billable toggle, Make Recurring, description, tags.
 - **Create Reminder** → "Customise Your Reminder" (date, subject, body, tokens): an email reminder to the user (SCRUM-1370: not verified, blocked in QA).
 
-**Status:** First draft (5 Nov 2026), from QA on preprod.
+**Status:** First draft (5 Nov 2026), updated 12 Nov 2026, from QA on preprod.

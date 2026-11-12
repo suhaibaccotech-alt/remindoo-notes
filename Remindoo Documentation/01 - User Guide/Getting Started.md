@@ -20,12 +20,16 @@
 | **Knowledge Base** | Help articles. |
 | **Financial Assistant** | AI assistant for financial questions. |
 | **Invoices** | Raising, sending and tracking invoices and payments. See [Invoices](Modules/Invoices/Overview.md). |
-| **Settings** | Firm-wide set-up: employees, teams, service templates, email templates and more. See [Settings](Modules/Settings/Overview.md). |
+| **Settings** | Firm-wide set-up: employees, teams, service templates, email templates, integrations, automations and more. See [Settings](Modules/Settings/Overview.md). |
+
+On preprod (Nov 2026) the menu also has:
+- **Inbox**: the email page, now with a **WhatsApp** switch next to Email. See [Email](Modules/Email/Overview.md) and [WhatsApp](Modules/WhatsApp/Overview.md).
+- **Calendar**: events you create in Remindoo. With a Google account connected it shows "Google 2-way sync active" and a **Sync Now** button, and task deadlines appear in your Google Calendar.
 
 ## The top bar
 - **Select Module** + search: pick a module (e.g. Tasks, Leads, Clients) and type 3 or more characters to search inside it.
 - **Your name and balance** (top right): opens your account menu with your AML balance, current plan, **Top Up Balance**, **Subscription**, **Billing History** and **Logout**.
-- **What's new** (bottom of the page): recent product changes.
+- **What's new**: recent product changes. On preprod this is a small docked tab at the edge of the page; a red dot means there's an entry you haven't seen, and clicking it slides the list out.
 
 ## Tables work the same way everywhere
 Most pages are tables with the same controls:
@@ -36,6 +40,6 @@ Most pages are tables with the same controls:
 - **Show Kanban View**: switch some tables to a board.
 - Sort and filter icons on each column header.
 
-**Status:** First draft (5 Nov 2026).
+**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA reports.
 
 *Source: observed on preprod (preprod-crm.remindoo.co) on 5 Nov 2026 during QA. The live app may lag preprod until the next release.*

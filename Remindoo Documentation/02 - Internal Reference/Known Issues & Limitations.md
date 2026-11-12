@@ -2,6 +2,45 @@
 
 **Purpose:** A running list of known issues, limitations, and things to be aware of across the app. Newest first. Card keys link to Jira.
 
+## Found in QA on preprod, 6–12 Nov 2026
+| Area | Issue | Card |
+| --- | --- | --- |
+| Invoices | Preview offers "Bank transfer — see details below" but prints no bank details | SCRUM-1161 (failed 12 Nov) |
+| Invoices | Paid and Partial invoices show Paid £0.00 and the full amount as Remaining | SCRUM-1508 |
+| Invoices | No Refund action on a paid invoice (row, edit view or preview); a "Payment Refunded" template exists | SCRUM-1093 (failed 11 Nov) |
+| Invoices | "Void invoice" opens a "Delete Invoice" dialog ("Type Delete to confirm") | SCRUM-1350 (noted again 12 Nov) |
+| Invoices | The invoice information modal has no link to the invoice itself | SCRUM-1385 (unclear) |
+| Clients | Outstanding invoices modal shows only "Not found in Stripe" for direct debit, and stopped listing WILLY WONKA's overdue INV-055 | SCRUM-1302 (failed 10 Nov) |
+| Tasks | Recurring tasks don't refresh ("QA Recurring 1113 Daily" stuck at Refresh at 04/11/2026) | SCRUM-1113 (In Progress) |
+| Tasks | On the All view the Complete and Archived chips show 0 while Kanban shows the real counts | SCRUM-1171 (In Progress) |
+| Tasks | The task's own view doesn't show what the client owes overall | SCRUM-901 (failed 10 Nov) |
+| Tasks | No "Filed" indicator on a task at "Filed Externally" | SCRUM-1083 (failed 10 Nov) |
+| Tasks | Status Change column says "Not updated yet" on every task | none yet |
+| Tasks, Leads, Clients | Three different colour schemes for action buttons | SCRUM-1360 (failed 10 Nov) |
+| Email | Inbox → Compose sends unresolved ::tokens:: as written, with no warning | SCRUM-1129 (failed 12 Nov) |
+| Email | Compose: "Reply sent!" toast for a new email; the next Compose keeps the last subject and recipient; Send needs two clicks | noted on SCRUM-1129 |
+| Email | The inbox doesn't sync on its own ("Synced at" unchanged for two hours until Refresh) | none yet |
+| Leads | An email sent from the lead's Conversation only appears after a reload; "Expand composer to full section" at about 1,060 px hides the conversation and composer | none yet |
+| Leads | The Conversation-tab composer has no Preview, and templates show raw ::tokens:: there | none yet |
+| Proposals | "Edit Proposal" on a draft opens under the Create New Proposal title and URL (`/proposals/create-new`) | told Abdur Rehman, 12 Nov |
+| Proposals | Document name isn't saved separately from the document | SCRUM-532 (failed 6 Nov) |
+| Proposals | Unsaved Changes dialog on an unchanged template | SCRUM-1419 |
+| Proposals | Signature is about twice as tall in Preview as in the editor | SCRUM-1420 |
+| Proposals | At 1280 px the Variables and Header & Footer buttons cover the Pricing Table and Packages buttons | SCRUM-1421 |
+| Proposals | Picking a template replaces the open document and its name without asking | SCRUM-1422 |
+| Proposals | Initials (and new Headings) can land on top of other elements | SCRUM-1278, SCRUM-1070 |
+| Proposals | Existing templates still show "Fee/Month"; only new pricing tables say "Fee" | SCRUM-1252 (note) |
+| Proposals | Word (.docx) import isn't available; PDF only | SCRUM-1081 (Not Started) |
+| Automations | Fit View does nothing; Zoom In overshoots (about 149–167%) | SCRUM-1185 (failed 12 Nov) |
+| Automations | Rules have no names, and "See how this rule runs" is a diagram, not a run log | SCRUM-1130 (failed 9 Nov) |
+| Settings | Security and MCP Access can't be reached since the Integrations page was split out | SCRUM-971, SCRUM-1208 |
+| Settings | Dashboard History shows year-first dates under a DD/MM/YYYY tenant; currency picker is GBP/EUR/USD only | SCRUM-1383 (failed 10 Nov) |
+| Settings | Integrations and Invoices → Payments have disagreed on GoCardless and PayPal ("Coming Soon" vs "Connect") | SCRUM-911, SCRUM-800 (Not Pushed) |
+| Calendar | An event created before Google was connected doesn't sync; no "no Gmail" confirmation; Google Meet ticked by default | SCRUM-959 |
+| Dashboard | Total Hours counts archived employees (12,600 = 7 × 1,800, 4 of the 7 archived) | SCRUM-287 (question) |
+| App-wide | "What's new" label is "What's new", not "New in Remindoo"; preprod's 06/11 entry is raw server log lines | SCRUM-1376 (failed 10 Nov) |
+| App-wide | Preprod can be slow: one Tasks table load took 42 s on 12 Nov (usually 2.5–6 s) | none yet |
+
 ## Found in QA on preprod, 5 Nov 2026
 | Area | Issue | Card |
 | --- | --- | --- |
@@ -21,7 +60,9 @@
 | Proposals | Document Builder: the properties panel covers the page; AR's 4 Nov UI fixes aren't on preprod yet | AR's list |
 
 ## Test-tenant limitations (affect QA, not users)
-- No connected mailbox, no HMRC authorisation, no 3CX, GoCardless shows "Coming soon". Cards needing these are tested by hand.
+- No HMRC authorisation, no 3CX, no AI provider, AML balance £0. Cards needing these are tested by hand. A Gmail mailbox and Google Calendar (suhaib.accotech@gmail.com) were connected in Tenant 1 on 12 Nov; FreeAgent and Stripe are connected.
+- The Test User account has no employee record, so it can't be assigned tasks (creating a task is blocked for it).
+- A Tasks automation ("Complete → Send Email", template "tasks tokens") is active in Tenant 1, so completing a task there sends an email.
 - Employees use yopmail addresses, so QA doesn't trigger anything that emails them.
 
-**Status:** Started 5 Nov 2026.
+**Status:** Started 5 Nov 2026, updated 12 Nov 2026. Card statuses are as of the QA run that found them; check Jira for the current state.
