@@ -1352,4 +1352,27 @@
 
 `| 02:45 | [Second speaker]: To yeh wali hum linking tab kar sakte hain jab woh jo apna tenant hai woh GoCardless account connect karega tabhi hum linking kar sakte hain is ki, theek hai. [First speaker]: Yes, theek hai. | [Second speaker]: So we can do this linking only when our tenant connects their GoCardless account, only then can we link this, okay. [First speaker]: Yes, okay. |`
 
+AR DMs on Slack
 
+*Fixed or not reproduced*
+
+- Create Email Template: Save is on screen at 900 px.
+- Proposal prices show two decimals \(“£2.30"\).
+- The wizard heading no longer overlaps “Import from Companies House”, and Next worked on the first click.
+- Service Templates: sorting and the Active/Inactive tabs and status menu work, and “Missing authentication token” didn’t appear on search or a status change.
+- Role user counts match Employee List \(Admin 6 / 6\).
+- The team editor lists the unassigned employee.
+- One correction to item 3 from earlier: the role counts do drop when someone is made Inactive \(QA 882 Role went from 1 user to 0, and back to 1 when reactivated\), so that part works.
+
+Update from Claude
+**Passed**
+
+- Onboarding validation and the AML risk calculation.
+- Client create and edit, add contact, auto-created document folder.
+- Calendar create and move both sync to Google.
+- Documents folders \(hidden/visible, duplicate name, subfolder, search, grid\).
+- Invoice draft maths and editing.
+- Checklist and email templates.
+- All 16 Settings pages load.
+Pass: SCRUM-1221 Clients bulk Export CSV
+Pass: all pages open; console clean apart from known errors; Clients search, profile, VAT Monthly/Quarterly, Export CSV; Leads table and profile; Tasks table, task modal, Timer Logs; Dashboard and History; Invoices list, sort, preview seller details, Record Payment; Proposals list and builder; Automations \(QA rules paused\); service templates; Teams; Documents storage
