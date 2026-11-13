@@ -26,6 +26,11 @@ Preprod, signed in as Michael Eldred Clark. Not carded.
 | Clients | A client can be finalised (made Active) with no contact and no service |
 | Clients | The onboarding URL's `step` stays `services` on the Risk Assessment and Internal Information steps |
 | Leads | Create Lead: a typed mobile or email is ignored until + is clicked; the hint only appears after pressing Next |
+| Clients | Assign Team Members: clicking a team or employee row does nothing; only the small circle on the right selects |
+| Clients | A newly added service shows Pending Tasks 0 although its first task exists and is Not started |
+| Proposals | New Proposal for an existing lead: the lead's email wasn't prefilled (Email Test 4) |
+| Proposals | Send Email to Lead gives no confirmation; it just returns to the Proposals list |
+| Proposals | The client's signing page shows the template's name as the title, not the proposal's name, and "21 pages" for a short template |
 
 ## Found in QA on preprod, 6–12 Nov 2026
 | Area | Issue | Card |

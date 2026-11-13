@@ -39,4 +39,12 @@
 - Internal Information, page 1: Previous Accountant switch, Client Source Type (Existing Client, Facebook, Google, Website) and Relation, both compulsory. Page 2: Payment (DD - Go Cardless [Recommended], DD - By Client, SO - By Client, No Work - Always Ask for Advance, Late Payer - but Pays, No payment - F&F, Payment on Invoice - Good Payer, Other), Google Review, Yearly Fee - Ex VAT, all compulsory. Finish → "Client finalised successfully", back to `/clients`, client now Active.
 - **A client can be finalised with no contact and no service.**
 
-**Status:** First draft (5 Nov 2026), onboarding walked end to end 13 Nov 2026.
+## Adding a service, saved (Tenant 1, 13 Nov 2026)
+- Client 11863, service "Test" (Daily, 5 min, trigger date 13/11/2026), assignees via QA Team A.
+- Assign Team Members: role chips All / Partner / Service Manager / Assignee; Teams / Employees; each row has a radio circle on the right and an expander. Clicking the row text does nothing; only the circle selects. Ticking a team selects its members individually (the Selected strip shows the two members, not the team). Hint text: "Unlock → pick assignees → Remove selected".
+- Save Assignees → toasts "Assigning employees...", "Saving assignees...", then about 10–15 s later "Test: tasks created." and "Service added successfully."
+- Services row: name, Pending Tasks 0, frequency, assignee initials, estimate, with **Edit additional info**, **Manage reminders** and **Pause**. Pending Tasks read 0 right after creation although a Not started task existed.
+- Task created immediately: status Not started, progress status Info Requested, priority High, service shown as "Test (Daily)", client and client type filled, estimate 0.08h, no internal deadline, external deadline 14/08/2027 (from the template's deadline settings).
+- Pause → "Pause this Service: Pausing Test (Daily) will not create future tasks and will make its associated emails and reminders inactive." Yes / No → "Service paused successfully."; the button becomes **Resume**.
+
+**Status:** First draft (5 Nov 2026), onboarding and adding a service walked end to end 13 Nov 2026.

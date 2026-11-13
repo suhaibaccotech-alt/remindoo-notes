@@ -37,4 +37,14 @@
 - Send Email: "Saving your letter of engagement in the background… send will unlock when the document is ready." Tokens: ::Lead Name::, ::Lead Phone Number::, ::Company Number::, ::Proposal Name::, ::Signing Link::, ::Signed PDF::, ::Tenant Name::. Preview Email, Send Email to Lead. The builder renders beside it with "Proposal Loaded (Total: £…)".
 - Not walked: sending and the client signing page.
 
-**Status:** First draft (12 Nov 2026), updated 13 Nov 2026 from a preprod walk-through. Open bugs are in [Known Issues & Limitations](../../Known%20Issues%20&%20Limitations.md).
+## Send and signing page (Tenant 1, 13 Nov 2026)
+- Existing Lead Name only lists unconverted leads. The lead's email was **not** prefilled for "Email Test 4" (it was for a lead in the other tenant); it had to be typed and added with +.
+- Range-priced product: "Configure bracket and variables for <frequency>" with Range, Select Bracket (checkbox per bracket), Variables with options and quantity, "Total Price of this product", Add Product. Validation: "Please select a bracket for Monthly." The basket shows "Bracket Applied: <bracket>".
+- Send Email step: From shows the connected mailbox; default subject "Proposal for Engagement"; Send is disabled until the letter of engagement has saved. Preview resolves ::Signing Link:: to `https://preprod-crm.remindoo.co/shared/<8-character id>`.
+- After Send Email to Lead there's no visible confirmation; the app redirects to `/proposals`, where the row is Sent with Sent Date set.
+- **Signing page** (`/shared/<id>`, opens without sign-in): header with the document title, "Shared Document Portfolio", page count, **DECLINE** and **FINISH & SUBMIT**; the document pages with the pricing table (product, "Breakdown (Details)" listing bracket and variable lines, fee per frequency, QTY, totals, discount, VAT); signature box with Draw / Type / Upload / Clear.
+- The header title is the **template's** name ("NEW DOCUMENT"), not the proposal's name.
+- The page count read "21 pages" for this template (same "Page 1 of 21" oddity noted on 9 Nov).
+- Not done: Finish & Submit, Decline, the signed PDF, and the auto-created invoice.
+
+**Status:** First draft (12 Nov 2026); wizard, send and signing page walked through 13 Nov 2026. Open bugs are in [Known Issues & Limitations](../../Known%20Issues%20&%20Limitations.md).

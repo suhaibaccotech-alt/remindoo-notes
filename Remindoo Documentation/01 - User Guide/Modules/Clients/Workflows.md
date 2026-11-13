@@ -29,8 +29,20 @@ A lead you convert to a client arrives the same way, as a Draft with the Introdu
    - **Frequency** (the ones the service template allows) and the **Estimated Time** in hours and minutes (at least 1 minute).
    - **Additional Info**: the service's own fields, such as dates and reference numbers. The date marked * is the one the task's deadlines and reminders are worked out from.
    - A line tells you how many tasks will be created for your choices.
-4. **Next**, then choose who does the work in **Assign Team Members**: pick teams or employees as **Partner**, **Service Manager** and **Assignee**, and **Save Assignees**. At least one person is needed.
-5. The service appears in the client's Services table with its frequency, and its tasks are created from the service template (see [Service Templates](../../Features/Service%20Templates.md)).
+4. **Next**, then choose who does the work in **Assign Team Members**:
+   - Pick the role at the top (**Partner**, **Service Manager** or **Assignee**).
+   - Under **Teams** or **Employees**, tick the circle on the right of a row. Ticking a team adds all its members; the arrow beside it lets you see them. The people you've chosen show under *Selected*.
+   - To take someone off again, click **Unlock**, pick them and remove them.
+   - At least one person is needed.
+5. **Save Assignees**. After a few seconds you'll see "<service>: tasks created." and "Service added successfully."
+6. The service appears in the client's Services table with its frequency, assignees and estimate. Its first task is in **Tasks** straight away, named and dated the way the service template says (see [Service Templates](../../Features/Service%20Templates.md)).
+
+## Pause or resume a client's service
+1. Client profile → **Services** → **Pause** on the service's row.
+2. Confirm: pausing stops future tasks being created and makes the service's emails and reminders inactive. Tasks already created stay.
+3. The button changes to **Resume**; click it to start the service again.
+
+On each service row you can also **Edit additional info** (the service's dates and details) and **Manage reminders**.
 
 ## Export clients to CSV
 1. Tick the clients you want in the table.
@@ -43,6 +55,6 @@ Clients → **Import Clients** opens the import window for a CSV file. *The impo
 ## See what a client owes
 In the Clients table, click the amount in the **Invoices** column to open *Outstanding invoices – <client>*.
 
-**Status:** First draft (12 Nov 2026), wizard and services walked through 13 Nov 2026. Saving a service's assignees, Companies House sync, AML verification and HMRC authorisation aren't documented yet.
+**Status:** First draft (12 Nov 2026); wizard, adding and pausing a service walked through 13 Nov 2026. Companies House sync, AML verification and HMRC authorisation aren't documented yet.
 
 *Source: walked through on preprod (preprod-crm.remindoo.co) on 13 Nov 2026, as Test User in the test tenant, creating a test lead and converting it to a client. The live app may lag preprod until the next release.*

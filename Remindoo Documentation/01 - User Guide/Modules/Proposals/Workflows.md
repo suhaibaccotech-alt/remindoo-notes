@@ -30,12 +30,13 @@ The wizard has three steps: **Lead Information**, **Pricing** and **Send Email**
 1. Proposals → **New Proposal** (or **Create Proposal** on a lead).
 2. Use the switch at the top to choose **Create for existing Lead** or **Create for new lead**. For a company, **Import from Companies House** can fill in the details.
 3. Pick the **LOE Template** (the document template the proposal is built from). The **Proposal Name** is filled in from the template; change it to something you'll recognise.
-4. For an existing lead, choose the **Existing Lead Name**. Its email is added for you; use **+** to add more addresses.
+4. For an existing lead, choose the **Existing Lead Name**. Leads already converted to clients aren't offered. Check the **Email**: if it's empty, type the address and click **+** (the address isn't used until you click +). Add more addresses the same way.
 5. Optionally switch on **Additional Info of Leads** for lead type, company number, turnover, address and notes.
 6. **Next**. The proposal is saved as a **Draft** at this point ("Draft proposal created successfully").
 
 **Step 2: Pricing**
 1. Click **Products** (or **Packages**). Pick a category on the left, then **Add** on each product you want. Products marked *Optional* can be unticked by the client when signing.
+   - If a product is priced by range, a panel asks you to *Configure bracket and variables*: tick the **bracket** that applies (e.g. a turnover band) and any **variable** options, check the *Total Price of this product*, then **Add Product**.
 2. Check the **Added Items** and total, then confirm with **Add 1 product** (the button shows how many you've chosen).
 3. Back on the pricing table you'll see each product's frequency, fee, quantity, total and yearly fee. Add a description, set a **Discount** (fixed or %), and choose the **VAT %** (20, 15, 10 or 0).
 4. **Document Builder** opens the document itself if you want to change its wording or layout.
@@ -45,11 +46,18 @@ The wizard has three steps: **Lead Information**, **Pricing** and **Send Email**
 1. The letter of engagement is saved in the background; **Send** unlocks when it's ready. You'll see the document with the proposal's prices loaded.
 2. Write the email: pick an **Email Template** or type the subject and body. Recipients come from step 1.
 3. Use tokens such as ::Lead Name::, ::Proposal Name:: and **::Signing Link::** (the link the client signs with).
-4. **Preview Email**, then **Send Email to Lead**.
+4. **Preview Email** shows the email with the tokens filled in, including the real signing link. Then **Send Email to Lead**.
+5. You're taken back to the Proposals list, where the proposal now shows as **Sent** with today's date.
 
 You can leave at any step and come back; the proposal stays under **Draft**.
 
-*The client's signing page isn't documented yet.*
+## What the client sees
+The signing link opens the proposal in the browser, with no sign-in needed:
+- The document, page by page, with the pricing table filled in: each product, its breakdown, quantity, fee, discount, VAT and totals.
+- A **signature box** where the client can **Draw**, **Type** or **Upload** a signature (**Clear** starts again), plus any other fields the document asks them to complete.
+- **Finish & Submit** at the top to sign, or **Decline**.
+
+When the client signs or declines, the proposal's status changes to **Signed** or **Declined** and you're notified (see **Settings → Notification Management**).
 
 ## Resend a proposal
 The resend screen lists the **Recipients** the proposal will go to before you send it again.
@@ -57,6 +65,6 @@ The resend screen lists the **Recipients** the proposal will go to before you se
 ## Raise an invoice automatically when a proposal is signed
 **Settings → Global Settings → Other Settings** has a switch that creates the invoice automatically once a client signs a proposal.
 
-**Status:** First draft (12 Nov 2026), proposal wizard added 13 Nov 2026 from a preprod walk-through.
+**Status:** First draft (12 Nov 2026); proposal wizard, sending and the client's signing page walked through 13 Nov 2026. Signing itself (Finish & Submit) wasn't done.
 
 *Source: preprod QA run reports of 6–12 Nov 2026 (see `QA/Runs`), added 12 Nov 2026 without a fresh walk-through. The live app may lag preprod until the next release.*
