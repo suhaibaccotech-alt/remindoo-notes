@@ -21,4 +21,12 @@
 - Currency picker: GBP, EUR, USD.
 - Paid/Partial invoices showing £0 paid is carded as SCRUM-1508.
 
-**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA runs.
+## Walk-through, 13 Nov 2026
+- Tabs are query params: `/invoices?tab=payments`, `templates`, `reminders`. Summary cards: Outstanding Invoices ("Unpaid invoices (excluding voided)"), Overdue Invoices, Invoice Drafts, Paid This Month.
+- Payments: "n/4 connected": Stripe, PayPal, Adfin, GoCardless, each with methods and fee text, Connect or Disconnect, and Record Payment.
+- Templates are branding themes (primary colour, bank details, PayPal, Mark as default) plus read-only Xero branding themes.
+- Reminders: sequence 7 / 3 / 1 days before, 1 / 3 / 7 days overdue, Payment Refunded; Email channel; Save Template Settings. Tokens include invoice, client and task tokens (::Invoice Number::, ::Invoice Amount::, ::Due Date::, ::Client Name::, ::Company Name::, ::Payment Link::, ::Client Type::, ::Address::, ::Last Year End::, ::Accounts Due On::, ::Task Name::, ::Description::, ::Task Status::, ::Task Progress Status::, ::Task External Deadline::, ::Task Internal Deadline::, ::Service Name::). Dispatch logs: Timestamp, Invoice Number, Channel, Scenario, Status, Notes / Errors. The job ran at 05:00 on 13 Nov.
+- New Invoice: Contact, Issue date, Due date, Invoice number, Reference, Branding theme, Currency, Amounts are (Tax exclusive); line columns Item, Description, Qty., Price, Disc. %, Account, Tax rate, Tax amount, Amount; Repeating/Recurring Schedule; Save as draft, Approve, Approve & send.
+- List actions with Xero connected: Sync to Xero, Link to a client, Refresh. The list pages 100 at a time.
+
+**Status:** First draft (5 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.

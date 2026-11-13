@@ -10,31 +10,28 @@ Where your firm builds reusable service blueprints once, so the same service (an
 ### Roles & Permissions
 See [Roles & Permissions.md](Roles%20&%20Permissions.md).
 
-## All Settings pages (as of 5 Nov 2026)
+## All Settings pages (as of 13 Nov 2026)
 Settings opens a list of pages; click **Show Details** on one to open it.
-1. **Global Settings**: firm-wide details, in tabs: Tenant Information, Email Settings, HMRC, Security, AI, MCP Access, Integrations, 3CX Calling.
-2. **Employee Roles & Permissions**: what each role can see and do.
-3. **Employee List**: add and manage employees (name, email, status, role).
-4. **Teams**: group employees into teams.
-5. **Services Templates & Reminders**: service blueprints, their tasks, subtasks and reminders (see above).
-6. **Email Templates**: reusable emails for anywhere in the app.
-7. **Proposal Settings**: proposal templates, defaults and approval rules.
-8. **Lead Settings**: how leads are captured, categorised and assigned, including custom lead statuses.
-9. **Client Custom Fields**: extra fields on client records.
-10. **Edit Own Profile**: your photo, name, phone, 3CX extension, LinkedIn, two-step sign-in (MFA) and AI access tokens.
-11. **Campaign Management**: email campaigns.
-12. **Planned Reminders**: all scheduled reminders in one place.
-13. **Notification Management**: how you're notified about activity.
-14. **Checklist Templates**: reusable checklists.
-15. **Automations**: rules that act on leads, proposals, tasks, clients and services.
 
-## What changed on preprod, 6–12 Nov 2026
-- **Global Settings** is now three tabs: **Tenant Information**, **Email Settings** and **Other Settings** (date and currency formats, and the switch that raises an invoice automatically when a proposal is signed).
-- A separate **Integrations** page now holds connections that used to be Global Settings tabs, including **HMRC**, the **AI** provider and payment providers (GoCardless and PayPal were shown as "Coming Soon" until 11 Nov and as **Connect** on 12 Nov).
-- **Security** and **MCP Access** couldn't be found on either page during testing.
-- **Automations** is reached from Settings. See [Automations](../Automations/Overview.md).
-- **Planned Reminders** has **Select all** for acting on several reminders at once, and a **Personal Task Reminders** section.
+| # | Page | What it's for |
+| --- | --- | --- |
+| 1 | **Global Settings** | Three tabs. **Tenant Information**: your firm's name, address, company number, phone and admin contact. **Email Settings**: the header and footer added to every outgoing email, with **Send Test Email**. **Other Settings**: the switch that creates a draft invoice automatically when a proposal is signed, your **currency** (GBP, EUR or USD; it can't be changed once you have data), **date format** and **time format** (12 or 24-hour). |
+| 2 | **Employee Roles & Permissions** | What each role can see and do. See [Roles & Permissions](Roles%20&%20Permissions.md). |
+| 3 | **Employee List** | Add and manage employees (**New User**), as a table or cards. |
+| 4 | **Teams** | Group employees into teams (**Create New Team**). |
+| 5 | **Services Templates & Reminders** | Service blueprints with their task, subtask, reminder and checklist templates. Tabs for All, Active and Inactive; **Create Service Templates** and **Import Service Templates**. A 🔒 marks built-in services that can't be deleted. See [Workflows](Workflows.md). |
+| 6 | **Email Templates** | Reusable emails by category (Clients, Leads, Proposals, Invoices, Tasks). **Create Email Template** and **Import Email Templates**. |
+| 7 | **Proposal Settings** | What you sell: **Categories**, **Variables**, **Ranges**, **Products** and **Packages**. |
+| 8 | **Lead Settings** | **Custom Fields**, **Custom Statuses**, **Round Robin Selection** and the **Lead Capture Form**. |
+| 9 | **Client Custom Fields** | The fields on client records, in three groups (Basic Information, Internal Information, Contacts). For each field: whether it's compulsory, whether it shows in the Clients table, and which client types it applies to. **Set as Default** restores the built-in set-up. |
+| 10 | **Edit Own Profile** | Your name, phone, 3CX extension, LinkedIn, **Security** (two-step sign-in) and AI access tokens. |
+| 11 | **Campaign Management** | Bulk email campaigns to Clients, Leads or Employees. Campaigns are started from the bulk send on those tables. |
+| 12 | **Planned Reminders** | Every scheduled reminder in one place, under **Services** and **Personal Task Reminders**, with recipients, status and any error. |
+| 13 | **Notification Management** | Which notifications you get in the app and by email, by group: Task & Subtask, Lead, Document, Calendar (also as a popup) and WhatsApp. |
+| 14 | **Checklist Templates** | Reusable checklists (**Create Template**, **Checklist Preview**). |
+| 15 | **Automations** | Rules that act on leads, proposals, tasks, clients and services. See [Automations](../Automations/Overview.md). |
+| 16 | **Integrations** | Connections to other services: AI account, **AI Assistant Access** (Claude, ChatGPT and other MCP clients), HMRC, Email, AI Calling Agent, Xero, QuickBooks, Sage, FreeAgent, GoCardless, Adfin, Stripe, PayPal and WhatsApp. Each shows **Connect**, **Manage** or **Connected**. |
 
-*Source: observed on preprod, 5 Nov 2026, and the QA run reports of 6–12 Nov 2026.*
+**Status:** Settings pages listed 13 Nov 2026 from a preprod walk-through. Service Templates are documented in full; the other pages aren't documented step by step yet.
 
-**Status:** Partially written — Settings-side of Service Templates documented; Clients and Tasks sides pending.
+*Source: walked through on preprod (preprod-crm.remindoo.co) on 13 Nov 2026, signed in as Michael Eldred Clark. The live app may lag preprod until the next release.*

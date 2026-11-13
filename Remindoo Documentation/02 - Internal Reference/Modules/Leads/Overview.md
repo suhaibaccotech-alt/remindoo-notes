@@ -13,4 +13,13 @@
 
 **Not verified by QA:** creating a lead, converting a lead to a client, campaigns, Kanban.
 
-**Status:** First draft (12 Nov 2026), from QA runs of 9–12 Nov on preprod.
+## Walk-through, 13 Nov 2026
+- Routes: `/leads`, lead profile `/leads/<id>`.
+- **Create Lead** modal: steps Basic Information, Contacts, Information & Attachments (the later steps unlock after Next). Compulsory: Lead Name, Mobile no., Lead Email, plus compulsory custom fields. "Enter Additional Details" adds Company Number, Lead Type, Assignment Type (Round-Robin: "The system will determine an assignee for this lead at the end of this onboarding"), Turnover, Business Website, Country, City, Address, Postal Code, Tags. Import from Companies House. Save & Exit / Next.
+- Quick view actions: Go to Lead Profile, Edit Lead Profile, Create Proposal, Update Lead Status, Send Lead Email, Add Timeline Note, Dial Call, Delete Lead.
+- Profile: header actions Convert to Client, Add Timeline Note, Edit Lead, Delete Lead; side panel Leads Info / Custom Fields; tabs Tasks, Proposals, Contacts, Conversation; Primary Contact Info; Attachments; Quick Access.
+- Conversation feed entries are tagged ONE WAY or TWO WAY; filters Email and Activity.
+- Table row tiles: Two Way Communication, Call Logs, Notes, Proposals, Tasks.
+- Not walked: saving a lead, Contacts and Attachments steps, Convert to Client (the tenant has an active New Lead → Send Email automation).
+
+**Status:** First draft (12 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.

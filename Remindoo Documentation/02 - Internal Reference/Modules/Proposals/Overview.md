@@ -30,4 +30,11 @@
 - Auto-invoice on signature: switch in Global Settings → Other Settings (SCRUM-1071, SCRUM-1506). Not verified end to end.
 - **Not verified by QA:** sending, the client signing view, the submission preview (selected package, unticked optional products), PDF download. These need the emailed signing link.
 
-**Status:** First draft (12 Nov 2026), from QA runs of 3–12 Nov on preprod (Document Testing Tenants 1 and 2). Open bugs are in [Known Issues & Limitations](../../Known%20Issues%20&%20Limitations.md).
+## Proposal wizard (walk-through, 13 Nov 2026)
+- `/proposals/create-new?tab=lead-information` → `?tab=pricing` → `?tab=send-email`.
+- Lead Information: "Toggle lead mode" switch (existing / new lead), LOE Template (searchable), Proposal Name (prefilled with the template name), Existing Lead Name, Email (prefilled from the lead, + to add), phone, optional Additional Info of Leads. **Next creates the draft** ("Draft proposal created successfully").
+- Pricing: Products / Packages pickers. The product picker lists categories with counts (they mirror client types), product cards with Standard Price and Grand Total, an Added Items basket and "Add n product". Table columns: Product Name, Frequency, Fee, QTY, Total Fee, Yearly Fee; Subtotal, Discount (Fixed or %), Total Exc. VAT, VAT % (20/15/10/0), Total Inc. VAT. "Products updated on proposal". Document Builder button.
+- Send Email: "Saving your letter of engagement in the background… send will unlock when the document is ready." Tokens: ::Lead Name::, ::Lead Phone Number::, ::Company Number::, ::Proposal Name::, ::Signing Link::, ::Signed PDF::, ::Tenant Name::. Preview Email, Send Email to Lead. The builder renders beside it with "Proposal Loaded (Total: £…)".
+- Not walked: sending and the client signing page.
+
+**Status:** First draft (12 Nov 2026), updated 13 Nov 2026 from a preprod walk-through. Open bugs are in [Known Issues & Limitations](../../Known%20Issues%20&%20Limitations.md).

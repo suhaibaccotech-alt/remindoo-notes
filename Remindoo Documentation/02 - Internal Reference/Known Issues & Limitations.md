@@ -2,6 +2,21 @@
 
 **Purpose:** A running list of known issues, limitations, and things to be aware of across the app. Newest first. Card keys link to Jira.
 
+## Seen in the documentation walk-through, 13 Nov 2026
+Preprod, signed in as Michael Eldred Clark. Not carded.
+
+| Area | Issue |
+| --- | --- |
+| Invoices | Xero Integration tab: Last sync "Failed: QSTASH_TARGET_URL_INVOICE_SYNC_PAGE not configured", and the Contacts sub-tab shows "Internal server error" |
+| Settings | MCP access is on Integrations as "AI Assistant Access" and Security is on Edit Own Profile, so the 10 Nov "can't be reached" finding (SCRUM-971, SCRUM-1208) may be a naming change, not a missing page. Worth a recheck in Tenant 1 |
+| Automations | Rules whose email template was deleted stay Active ("Deleted template — choose another") |
+| Tasks | Progress still shows "0hof 12.2h" (missing space); Status Change still "Not updated yet" |
+| Tasks | Recurring task "test a rec" (Daily) shows Refresh at 23/10/2026 (same symptom as SCRUM-1113) |
+| Clients | New-client wizard: leaving after step 1 (name and type) keeps nothing; a draft only exists once the correspondence step is saved |
+| Proposals | The proposal wizard creates the draft on the first Next, before any pricing is added |
+| Dashboard | Timesheet, Leads, Proposals and Client Summary tabs opened on a single past day (22 Sept → 22 Sept 2026) |
+| Inbox | "Synced at" was two days old (11/11/2026 05:00) on opening |
+
 ## Found in QA on preprod, 6–12 Nov 2026
 | Area | Issue | Card |
 | --- | --- | --- |
@@ -65,4 +80,4 @@
 - A Tasks automation ("Complete → Send Email", template "tasks tokens") is active in Tenant 1, so completing a task there sends an email.
 - Employees use yopmail addresses, so QA doesn't trigger anything that emails them.
 
-**Status:** Started 5 Nov 2026, updated 12 Nov 2026. Card statuses are as of the QA run that found them; check Jira for the current state.
+**Status:** Started 5 Nov 2026, updated 13 Nov 2026. Card statuses are as of the QA run that found them; check Jira for the current state.

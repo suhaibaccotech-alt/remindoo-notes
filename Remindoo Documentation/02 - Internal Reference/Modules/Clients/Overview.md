@@ -19,4 +19,14 @@
 - Digital AML verification emails failed to send on production for weeks (SCRUM-1518); confirmed sending again on 11 Nov.
 - Risk Assessment & AML page: no Proof of Address warning opens on its own (SCRUM-1068).
 
-**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA runs.
+## Walk-through, 13 Nov 2026
+- New-client wizard at `/clients/clients-on-boarding`: step 1 "Welcome to Client Creation" (Client Name, Type, Import from Companies House); step 2 "<Type> <name> Correspondence" with built-in and custom fields (compulsory ones set in Client Custom Fields). **No draft is created by step 1 alone**; the earlier note that step 1 saves refers to saving the Basic Information step.
+- The profile opens as an overlay on `/clients` ("Preview of <client>", "Overview CH"), not a separate route. Sections: Basic Information, Contacts, Services, Internal Information, Risk Assessment & AML (tabs Risk Assessment, Digital AML Verification), Client Portal Management, E-Signatures ("Client Portal Documents", grouped by task), Conversation (Email / Activity).
+- Basic Information and Contacts have Basic Fields / Additional Fields and Edit All.
+- Services table columns: Services, Pending Tasks, Frequency, Assignees, Additional Info, Tax Liabilities, Client Authorisation, Reminders, Estimate; Pause per service; "Total Yearly Time". **Add Services** → "Manage Services For <client>": each template shows "This service will create n subtasks and m preset reminders" with Add / Add Another / Already Added ("Added (Daily)").
+- Risk Assessment: 16 yes/no questions producing "AML Risk Assessment: Low Risk", with Save.
+- Conversation activity entries: Basic Information Edited (old and new value), Service Added, Document Sent, Document Signed, Email Linked.
+- Table row buttons: unread emails (opens Communication), document folder, signed e-sign documents, pending tasks, invoices ("Invoice summary").
+- Not walked: adding a service (it creates tasks and reminders), Companies House sync, AML verification send, HMRC authorisation.
+
+**Status:** First draft (5 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.

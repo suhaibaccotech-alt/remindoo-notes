@@ -15,7 +15,18 @@ Clicking a client shows its services (with frequency, e.g. *VAT (Monthly)*), sta
 **Go To Client Profile**, **Document Folder**, **Manage Tasks**, **Add Custom Task**, **Create New Proposal**, **Go To CH** (Companies House), **AI Summary**, **Dial Call**, **Mark Client Archive** and **Delete Client Profile**.
 
 ## The client profile
-**Go To Client Profile** opens the full record, in sections: **Basic Information**, **Contacts**, **Services**, **Internal Information**, **Risk & AML**, **Client Portal Management**, **E-Signatures** and **Conversation** (notes, emails and WhatsApp messages for this client).
+**Go To Client Profile** opens the full record ("Preview of <client>"), in sections:
+
+| Section | What's in it |
+| --- | --- |
+| **Basic Information** | Client name, status, type, company name and number, trading name, email, phone, address, key dates (incorporation, commenced, LOE signed, SA register), UTR, National Insurance number, website and notes. **Basic Fields / Additional Fields** switch between the standard fields and your firm's custom ones; **Edit All** makes them editable. |
+| **Contacts** | The people at the client. Each contact has a name, type, address, designation, National Insurance number, UTR, date of birth, emails, mobile numbers, Form 64-8 status, nationality and identity-verification details. **Add new contact** adds another. |
+| **Services** | The services you provide, with pending tasks, frequency, assignees, tax liabilities, client authorisation, reminders and time estimate for each, and the total yearly time. **Add Services** opens *Manage Services*; **Pause** stops a service; **Company House Sync** refreshes company data. |
+| **Internal Information** | Yearly fee, payment type, where the client came from, previous accountant, **View Related Clients** and **Send Letter of Clearance**. |
+| **Risk Assessment & AML** | The AML risk questions (the answers give a risk level such as *Low Risk*) and **Digital AML Verification**. |
+| **Client Portal Management** | Who at the client can sign in to the client portal: **Invite Contact**, **Create Client User Manually**, and whether each person has been invited or granted access. |
+| **E-Signatures** | Documents sent to the client to sign, grouped by task, with **Upload Document**. |
+| **Conversation** | Two-way emails and the client's activity (edits, services added, documents sent and signed) in one feed, with **Email** and **Activity** filters. |
 
 In **Services**, each frequency of a service is its own row, so a client can have *VAT (Monthly)* and *VAT (Quarterly)* side by side.
 
@@ -24,6 +35,6 @@ Click the amount in the **Invoices** column to see *Outstanding invoices – <cl
 
 See [Workflows](Workflows.md) for step-by-step guides.
 
-**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA reports.
+**Status:** First draft (5 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.
 
 *Source: observed on preprod (preprod-crm.remindoo.co) on 5 Nov 2026 during QA. The live app may lag preprod until the next release.*

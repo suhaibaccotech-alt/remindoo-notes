@@ -22,9 +22,13 @@
 | **Invoices** | Raising, sending and tracking invoices and payments. See [Invoices](Modules/Invoices/Overview.md). |
 | **Settings** | Firm-wide set-up: employees, teams, service templates, email templates, integrations, automations and more. See [Settings](Modules/Settings/Overview.md). |
 
-On preprod (Nov 2026) the menu also has:
-- **Inbox**: the email page, now with a **WhatsApp** switch next to Email. See [Email](Modules/Email/Overview.md) and [WhatsApp](Modules/WhatsApp/Overview.md).
-- **Calendar**: events you create in Remindoo. With a Google account connected it shows "Google 2-way sync active" and a **Sync Now** button, and task deadlines appear in your Google Calendar.
+The menu also has **Inbox** (in place of Emails) and **Calendar**. They're described below.
+
+## Pages without their own guide yet
+- **Inbox**: your connected mailbox, with an **Email / WhatsApp** switch at the top. See [Email](Modules/Email/Overview.md) and [WhatsApp](Modules/WhatsApp/Overview.md).
+- **Calendar** ("CRM Calendar"): Month, Week, Day and Agenda views. On the left, **My Calendars** lets you show or hide your connected account's events, **Internal tasks (deadlines)**, **External tasks (deadlines)** and **CRM reminders**. With Google connected it shows "Google 2-way sync active" and **Sync Now**. **Create Event** asks for a title, a category (Meeting or Reminder), the date, start and end time (or **All day event**), an optional **Google Meet video call** or meeting URL, and **More options**.
+- **Knowledge Base**: your firm's help articles. Tabs for All, Draft, In Review and Published, a visibility filter (Internal, External, Both), **New Article**, **FAQs & Support**, **Articles Management** and **Tags**. Each article shows its category, visibility, reading time, views and author.
+- **Financial Assistant**: upload a financial document (PDF or Word, up to 5 MB) and ask questions about it. Suggested prompts include summarising key insights and highlighting risks. Messages are switched off until a file is uploaded.
 
 ## The top bar
 - **Select Module** + search: pick a module (e.g. Tasks, Leads, Clients) and type 3 or more characters to search inside it.
@@ -40,6 +44,6 @@ Most pages are tables with the same controls:
 - **Show Kanban View**: switch some tables to a board.
 - Sort and filter icons on each column header.
 
-**Status:** First draft (5 Nov 2026), updated 12 Nov 2026 from QA reports.
+**Status:** First draft (5 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.
 
 *Source: observed on preprod (preprod-crm.remindoo.co) on 5 Nov 2026 during QA. The live app may lag preprod until the next release.*
