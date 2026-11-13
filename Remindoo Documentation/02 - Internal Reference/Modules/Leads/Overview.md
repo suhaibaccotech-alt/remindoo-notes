@@ -20,6 +20,14 @@
 - Profile: header actions Convert to Client, Add Timeline Note, Edit Lead, Delete Lead; side panel Leads Info / Custom Fields; tabs Tasks, Proposals, Contacts, Conversation; Primary Contact Info; Attachments; Quick Access.
 - Conversation feed entries are tagged ONE WAY or TWO WAY; filters Email and Activity.
 - Table row tiles: Two Way Communication, Call Logs, Notes, Proposals, Tasks.
-- Not walked: saving a lead, Contacts and Attachments steps, Convert to Client (the tenant has an active New Lead → Send Email automation).
+- Not walked in that tenant: saving a lead (it has an active New Lead → Send Email automation).
 
-**Status:** First draft (12 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.
+## Create and convert, walked in Tenant 1 as Test User, 13 Nov 2026
+- Mobile and email are multi-value: the typed value only counts after clicking **+** ("Please click + to save this mobile number."), then shows as "Mobile no. #1" / "Email #1".
+- The lead is created on the first **Next** (step 1). Step 2 Contacts: Create Contact (Contact Name, Contact Email, Area Code, Contact Mobile No., all compulsory; Enter Additional Details), "Please Select a Primary Contact", Previous, Skip. Step 3: Estimated Value, Attach File (max 10 MB each), Previous, Finish → "Lead created successfully".
+- New lead: status New Lead, source Manual, round-robin assignee set.
+- Update Lead Status dialog: Existing Status, New Status, Cancel, Update.
+- **Convert to Client:** confirm dialog ("This creates a new client record and cannot be undone"), then "Converting lead to client..." for roughly 20–30 s before "Lead converted to client successfully". The page stays on the lead; the header button becomes a "Converted to Client" label and Create Proposal leaves Quick Access.
+- Result: a **Draft** client with the lead's name (and a document folder), Introduction marked Complete, type "Other". Test lead 1318 → client 11863.
+
+**Status:** First draft (12 Nov 2026), create and convert walked through 13 Nov 2026.

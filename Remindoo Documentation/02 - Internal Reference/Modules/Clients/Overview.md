@@ -27,6 +27,16 @@
 - Risk Assessment: 16 yes/no questions producing "AML Risk Assessment: Low Risk", with Save.
 - Conversation activity entries: Basic Information Edited (old and new value), Service Added, Document Sent, Document Signed, Email Linked.
 - Table row buttons: unread emails (opens Communication), document folder, signed e-sign documents, pending tasks, invoices ("Invoice summary").
-- Not walked: adding a service (it creates tasks and reminders), Companies House sync, AML verification send, HMRC authorisation.
+- Not walked: Companies House sync, AML verification send, HMRC authorisation.
 
-**Status:** First draft (5 Nov 2026), updated 13 Nov 2026 from a preprod walk-through.
+## Onboarding wizard end to end (Tenant 1 as Test User, 13 Nov 2026)
+- Resume: Draft client quick view → **Complete your onboarding** → dialog listing Introduction, Contacts, Services, Risk Assessment & AML, Internal Information as Complete / Incomplete ("suggested next step"), with "Start from beginning" and "Continue onboarding".
+- Route: `/clients/clients-on-boarding?resume_client_id=<id>&step=<introduction|contacts|services>`. **The `step` param stays `services` through Risk Assessment and Internal Information.**
+- Contacts on resume: still the empty "Manage your contacts" screen with only Go back (bug first seen 3 Nov).
+- Services: Add Services → Manage Services (Add / Not Allowed / Already Added / Add Another, "will create n subtasks and m preset reminders"). Add → frequency, estimated time (validation "Estimated time must be at least 1 minute"), the template's custom fields with the trigger date compulsory, and a live count ("Based on your current selection, n task(s) will be created"; it showed 1 before a date was chosen and 0 with a trigger date a week ahead). Next → Assign Team Members (All / Partner / Service Manager / Assignee; Teams / Employees; UNLOCK; Save Assignees). **Save with nobody selected does nothing and shows no message.** Not saved in the walk-through, to avoid notifying the test employees.
+- Services step → Next works with no services ("Client information saved successfully").
+- Risk Assessment: one question per screen (No / Yes, question jump buttons, View Past Questions, Digital AML), then a summary with a toggle per answer and Save & Continue → "AML answers saved successfully".
+- Internal Information, page 1: Previous Accountant switch, Client Source Type (Existing Client, Facebook, Google, Website) and Relation, both compulsory. Page 2: Payment (DD - Go Cardless [Recommended], DD - By Client, SO - By Client, No Work - Always Ask for Advance, Late Payer - but Pays, No payment - F&F, Payment on Invoice - Good Payer, Other), Google Review, Yearly Fee - Ex VAT, all compulsory. Finish → "Client finalised successfully", back to `/clients`, client now Active.
+- **A client can be finalised with no contact and no service.**
+
+**Status:** First draft (5 Nov 2026), onboarding walked end to end 13 Nov 2026.

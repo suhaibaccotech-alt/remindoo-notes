@@ -5,7 +5,7 @@
 ## How it works, end to end
 
 1. **Settings** — you build a Service Template: what it's called, whether it's Internal or External, how often it runs, and exactly what task(s) it should create. → [Settings/Workflows.md](../Modules/Settings/Workflows.md)
-2. **Clients** — *(not yet documented)* — you apply a Service Template to a specific client, turning the blueprint into a real, active service for that client.
+2. **Clients** — you add the service to a client (**Services → Add Services**), choosing its frequency, estimated time, the service's own dates and details, and who does the work. This turns the blueprint into a real, active service for that client. → [Clients/Workflows.md](../Modules/Clients/Workflows.md)
 3. **Tasks** — *(not yet documented)* — Remindoo automatically creates the task(s) for that service, with deadlines calculated the way you configured in Settings.
 
 ## What you can configure in Settings (documented so far)
@@ -18,4 +18,4 @@
 
 Full detail: [Settings/Workflows.md](../Modules/Settings/Workflows.md).
 
-**Status:** Settings-side fully documented; Clients and Tasks sides pending.
+**Status:** Settings side fully documented; Clients side documented up to choosing assignees (13 Nov 2026); Tasks side pending.

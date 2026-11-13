@@ -17,6 +17,16 @@ Preprod, signed in as Michael Eldred Clark. Not carded.
 | Dashboard | Timesheet, Leads, Proposals and Client Summary tabs opened on a single past day (22 Sept → 22 Sept 2026) |
 | Inbox | "Synced at" was two days old (11/11/2026 05:00) on opening |
 
+### Later the same day, as Test User in Tenant 1
+| Area | Issue |
+| --- | --- |
+| Leads | Convert to Client takes roughly 20–30 s on "Converting lead to client..." with the dialog still open |
+| Clients | Resuming onboarding at Contacts still shows an empty "Manage your contacts" screen with no way forward (first seen 3 Nov) |
+| Clients | Add service → Assign Team Members: Save Assignees with nobody selected does nothing and gives no message |
+| Clients | A client can be finalised (made Active) with no contact and no service |
+| Clients | The onboarding URL's `step` stays `services` on the Risk Assessment and Internal Information steps |
+| Leads | Create Lead: a typed mobile or email is ignored until + is clicked; the hint only appears after pressing Next |
+
 ## Found in QA on preprod, 6–12 Nov 2026
 | Area | Issue | Card |
 | --- | --- | --- |
