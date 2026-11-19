@@ -5,6 +5,12 @@ Check CH Sync for Filed Externally Markers from the previous system (Filed boole
 Email syncing not working in Clients
 LoC Tag should have limited time-based visibility based on html for design overhaul
 
+### Proposal Overhaul
+As per accounting year, the fee should be charged.
+Calculate the number of months, with optional selection of the coming month, since the last filing
+Accounts, VAT, SATR
+Limited Company will have a catch
+
 ### Lovable
 Holdings Limited - Remindoo Sparkle Page
 
