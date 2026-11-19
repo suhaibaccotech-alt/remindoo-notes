@@ -5,8 +5,6 @@ Check CH Sync for Filed Externally Markers from the previous system (Filed boole
 Email syncing not working in Clients
 LoC Tag should have limited time-based visibility based on html for design overhaul
 Add Primary contact tokens for clients
-
-
 ### Proposal Overhaul
 As per accounting year, the fee should be charged.
 Calculate the number of months since the last filing
@@ -28,8 +26,6 @@ Show Preview Button for Proposals
 Add default email template for proposals in settings
 Add Primary contact tokens for leads 
 Prices should be exclusive of VAT and show breakdown of price and VAT on tooltip
-
-
 ### Lovable
 Holdings Limited - Remindoo Sparkle Page
 
@@ -50,10 +46,14 @@ Reminders sent events are not visible in the conversation.
 Add deletion to user list in Employee List
 Lead's CH Import doesn't catch repeated instances of company numbers across clients or leads
 Send emails on assignment of Lead to employees
+Change label to Outstanding Invoices (clients, leads and tasks tables)
 # MB
 ## Current Issues
 Check for consistency across the app
 [Imp] Filter Views is showing assignee ids instead of names
+Recheck sorting in Leads, Tasks, Clients
+Check Mentions
+Change Comment events to have a slight yellow tint
 
 # Aftab
 ## Current Issues
@@ -62,8 +62,9 @@ The design instructions need to be followed to the letter
 Check if emails have been connected and show pulsing effect for unread new emails
 Show disabled checklist section if checklist is not applicable
 Allow Employee Role Name to be editable
-
-
+GoCardLess Direct Debit should be dynamic with payment provider, so drop the GoCardLess
+Due Amount is not working, Outstanding Invoices is not working
+Invoice redirect from tasks is not working and tabs
 # Hammad
 ## Current Issues
 Add automation event that changes the status of a lead when (Trigger) the proposal is sent.
