@@ -7,9 +7,18 @@ LoC Tag should have limited time-based visibility based on html for design overh
 
 ### Proposal Overhaul
 As per accounting year, the fee should be charged.
-Calculate the number of months, with optional selection of the coming month, since the last filing
+Calculate the number of months since the last filing
+	Use CH Sync
+	Make it year based to see exactly til when the planned work is caught up with the last filed instance
+	Balancing Payments will always be the 31st of January, and 31st July of the succeeding year of the filing date.
 Accounts, VAT, SATR
-Limited Company will have a catch
+Limited Company will have a catch-up fee of 13 (normal case)
+Accotax calculator has this implemented
+limitedcompany.accountants/online-filing/limited-company
+Use a system to ask the client for turnover to calculate the fee using a stepped system
+Keep existing skeleton for the proposal creation process, simply augment
+Client j
+
 
 ### Lovable
 Holdings Limited - Remindoo Sparkle Page
