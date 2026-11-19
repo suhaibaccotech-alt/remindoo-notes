@@ -18,16 +18,11 @@ Conversation, Proposal, Tasks, Contacts new order for lead profile
 Add back button for when side menu is collapsed in lead profile
 Add checklist for leads, folders should be associated with leads in addition to client, and it should port over when lead is converted to client
 LoE link is missing in Conversation Event
-## Future Stuff
-
-
+Tasks Deadline Color coding is missing
+Service Column should show modal with 
 
 # MB
 ## Current Issues
-
-
-## Future Stuff
-
 
 
 # Aftab
@@ -36,21 +31,11 @@ Color coding has not been followed in the clients design overhaul
 The design instructions need to be followed to the letter
 Check if emails have been connected and show pulsing effect for unread new emails
 Show disabled checklist section if checklist is not applicable
-## Future Stuff
-
 
 
 # Hammad
 ## Current Issues
-Add automation event that changes the status of a lead when the proposal is sent.
-
-## Future Stuff
-
-
+Add automation event that changes the status of a lead when (Trigger) the proposal is sent.
 
 # Sami
 ## Current Issues
-
-
-## Future Stuff
-
