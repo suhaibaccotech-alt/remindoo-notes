@@ -26,6 +26,7 @@ Add deletion to user list in Employee List
 # MB
 ## Current Issues
 Check for consistency across the app
+[Imp] Filter Views is showing assignee ids instead of names
 
 # Aftab
 ## Current Issues
