@@ -4,6 +4,7 @@ Links missing in Proposal Card (Modal that opens on table row click)
 Add in outstanding invoices to client profile
 Add in color coding legend inside of client profile
 Add in Tax Liabilities, Status Change Date, E-Sign Column.
+Add Links for CH on Company Name/Client across the module
 
 ### Lovable
 Holdings Limited - Remindoo Sparkle Page
@@ -19,11 +20,11 @@ Add back button for when side menu is collapsed in lead profile
 Add checklist for leads, folders should be associated with leads in addition to client, and it should port over when lead is converted to client
 LoE link is missing in Conversation Event
 Tasks Deadline Color coding is missing
-Service Column should show modal with 
-
+Service Column should show modal with custom fields. 
+Add Links for CH on Company Name/Client across the module
 # MB
 ## Current Issues
-
+Check for consistency across the app
 
 # Aftab
 ## Current Issues
