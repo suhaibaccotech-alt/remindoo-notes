@@ -5,6 +5,7 @@ Check CH Sync for Filed Externally Markers from the previous system (Filed boole
 Email syncing not working in Clients
 LoC Tag should have limited time-based visibility based on html for design overhaul
 
+
 ### Proposal Overhaul
 As per accounting year, the fee should be charged.
 Calculate the number of months since the last filing
@@ -17,7 +18,11 @@ Accotax calculator has this implemented
 limitedcompany.accountants/online-filing/limited-company
 Use a system to ask the client for turnover to calculate the fee using a stepped system
 Keep existing skeleton for the proposal creation process, simply augment
-Client j
+Client journey should have a global setting that has the default setting, and it should be editable for the steps
+	Steps can be disabled for specific clients. 
+	For the client table view, show statuses and details based on the hovered step element
+Add discount setting in settings, to work in the same way as Stripe
+
 
 
 ### Lovable
@@ -38,6 +43,7 @@ Service Column should show modal with custom fields.
 Add Links for CH on Company Name/Client across the module
 Reminders sent events are not visible in the conversation.
 Add deletion to user list in Employee List
+Lead's CH Import 
 # MB
 ## Current Issues
 Check for consistency across the app
