@@ -1,10 +1,9 @@
 # AR
 ## Current Issues
 Links missing in Proposal Card (Modal that opens on table row click)
-Add in outstanding invoices to client profile
-Add in color coding legend inside of client profile
-Add in Tax Liabilities, Status Change Date, E-Sign Column.
-Add Links for CH on Company Name/Client across the module
+Check CH Sync for Filed Externally Markers from the previous system (Filed boolean is not working correctly)
+Email syncing not working in Clients
+
 
 ### Lovable
 Holdings Limited - Remindoo Sparkle Page
@@ -22,6 +21,7 @@ LoE link is missing in Conversation Event
 Tasks Deadline Color coding is missing
 Service Column should show modal with custom fields. 
 Add Links for CH on Company Name/Client across the module
+Reminders sent events are not visible in the conversation.
 # MB
 ## Current Issues
 Check for consistency across the app
