@@ -11,7 +11,11 @@ Color coding has not been followed in the leads design overhaul
 The design instructions need to be followed to the letter
 Check if emails have been connected and show pulsing effect for unread new emails
 Show Emails on Conversation Load on the event, not a separate popup
-Conversation, Proposal, Tasks, Contact
+Conversation, Proposal, Tasks, Contacts new order for lead profile
+Add back button for when side menu is collapsed in lead profile
+Add checklist for leads, folders should be associated with leads in addition to client, and it should port over when lead is converted to client
+LoE link is missing in Conversation Event
+Links missing in Proposal Card (Modal that opens on table row click)
 ## Future Stuff
 
 
@@ -29,14 +33,14 @@ Conversation, Proposal, Tasks, Contact
 Color coding has not been followed in the clients design overhaul
 The design instructions need to be followed to the letter
 Check if emails have been connected and show pulsing effect for unread new emails
-
+Show disabled checklist section if checklist is not applicable
 ## Future Stuff
 
 
 
 # Hammad
 ## Current Issues
-
+Add automation
 
 ## Future Stuff
 
