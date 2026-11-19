@@ -54,7 +54,6 @@ Check for consistency across the app
 Recheck sorting in Leads, Tasks, Clients
 Check Mentions
 Change Comment events to have a slight yellow tint
-
 # Aftab
 ## Current Issues
 Color coding has not been followed in the clients design overhaul
