@@ -4,6 +4,7 @@ Links missing in Proposal Card (Modal that opens on table row click)
 Check CH Sync for Filed Externally Markers from the previous system (Filed boolean is not working correctly)
 Email syncing not working in Clients
 LoC Tag should have limited time-based visibility based on html for design overhaul
+Add Primary contact tokens for clients
 
 
 ### Proposal Overhaul
@@ -22,7 +23,11 @@ Client journey should have a global setting that has the default setting, and it
 	Steps can be disabled for specific clients. 
 	For the client table view, show statuses and details based on the hovered step element
 Add discount setting in settings, to work in the same way as Stripe
-
+Packages step should have an accordion for the description step
+Show Preview Button for Proposals
+Add default email template for proposals in settings
+Add Primary contact tokens for leads 
+Prices should be exclusive of VAT and show breakdown of price and VAT on tooltip
 
 
 ### Lovable
@@ -43,7 +48,8 @@ Service Column should show modal with custom fields.
 Add Links for CH on Company Name/Client across the module
 Reminders sent events are not visible in the conversation.
 Add deletion to user list in Employee List
-Lead's CH Import 
+Lead's CH Import doesn't catch repeated instances of company numbers across clients or leads
+Send emails on assignment of Lead to employees
 # MB
 ## Current Issues
 Check for consistency across the app
@@ -62,5 +68,3 @@ Allow Employee Role Name to be editable
 ## Current Issues
 Add automation event that changes the status of a lead when (Trigger) the proposal is sent.
 
-# Sami
-## Current Issues
