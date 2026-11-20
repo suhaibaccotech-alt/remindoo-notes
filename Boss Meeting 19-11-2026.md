@@ -47,6 +47,10 @@ Add deletion to user list in Employee List
 Lead's CH Import doesn't catch repeated instances of company numbers across clients or leads
 Send emails on assignment of Lead to employees
 Change label to Outstanding Invoices (clients, leads and tasks tables)
+Color coding has not been followed in the clients design overhaul
+The design instructions need to be followed to the letter
+Check if emails have been connected and show pulsing effect for unread new emails
+Show disabled checklist section if checklist is not applicable
 # MB
 ## Current Issues
 Check for consistency across the app
@@ -56,15 +60,12 @@ Check Mentions
 Change Comment events to have a slight yellow tint
 # Aftab
 ## Current Issues
-Color coding has not been followed in the clients design overhaul
-The design instructions need to be followed to the letter
-Check if emails have been connected and show pulsing effect for unread new emails
-Show disabled checklist section if checklist is not applicable
+
 Allow Employee Role Name to be editable
 GoCardLess Direct Debit should be dynamic with payment provider, so drop the GoCardLess
 Due Amount is not working, Outstanding Invoices is not working
 Invoice redirect from tasks is not working and tabs
 # Hammad
-## Current Issues
+## Current Issues (To be done on Tuesday)
 Add automation event that changes the status of a lead when (Trigger) the proposal is sent.
 
